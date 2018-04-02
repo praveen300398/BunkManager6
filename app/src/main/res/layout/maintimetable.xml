@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/tt">
+
+    <TextView
+        android:id="@+id/sp_Day"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Today"
+        android:textSize="26sp"
+        android:paddingTop="18dp"
+        android:textColor="#333333"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_Day"
+        android:paddingTop="8dp">
+    </ListView>
+
+
+    <Button
+        android:id="@+id/btn_markFull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@android:id/list"
+        android:layout_alignParentRight="true"
+        android:text="Mark Day"
+        android:alpha="0.6"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/btn_calendar"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_above="@android:id/list"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10px"
+        android:text=""
+        android:background="@drawable/calendar_icon"
+        />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_markFull">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fabBGLayout"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab_layout1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom|end"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stats"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="bottom|end"
+                    android:tint="@android:color/background_light"
+                    app:backgroundTint="@android:color/holo_green_light"
+                    app:fabSize="mini"
+                    app:rippleColor="@android:color/background_light"
+                    app:srcCompat="@android:drawable/ic_menu_info_details">
+
+                </android.support.design.widget.FloatingActionButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab_layout2"
+                android:layout_above="@id/fab_layout1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="23dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom|end"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset\nT.T"
+                    android:layout_marginLeft="2dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:tint="@android:color/background_light"
+                    app:backgroundTint="@android:color/holo_green_light"
+                    app:fabSize="mini"
+                    app:srcCompat="@android:drawable/ic_delete">
+
+                </android.support.design.widget.FloatingActionButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab_layout3"
+                android:layout_above="@id/fab_layout2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="23dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom|end"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset\nAtt"
+                    android:layout_marginLeft="2dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:paddingEnd="12dp"
+                    android:tint="@android:color/background_light"
+                    app:backgroundTint="@android:color/holo_green_light"
+                    app:fabSize="mini"
+                    app:srcCompat="@android:drawable/ic_delete">
+
+                </android.support.design.widget.FloatingActionButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab_layout4"
+                android:layout_above="@id/fab_layout3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="23dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom|end"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset\nAll"
+                    android:layout_marginLeft="2dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:tint="@android:color/background_light"
+                    app:backgroundTint="@android:color/holo_green_light"
+                    app:fabSize="mini"
+                    app:srcCompat="@android:drawable/ic_delete">
+
+                </android.support.design.widget.FloatingActionButton>
+            </LinearLayout>
+
+       <!---     <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab_layout6"
+                android:layout_above="@id/fab_layout5"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="23dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom|end"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:tint="@android:color/background_light"
+                    app:backgroundTint="@android:color/holo_green_light"
+                    app:fabSize="mini"
+                    app:srcCompat="@android:drawable/ic_dialog_info">
+
+                </android.support.design.widget.FloatingActionButton>
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab_layout5"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="23dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom|end"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bunk1"
+                    android:layout_marginStart="4dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab5"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="bottom|end"
+                    android:tint="@android:color/background_light"
+                    app:backgroundTint="@android:color/holo_green_light"
+                    app:fabSize="mini"
+                    app:rippleColor="@android:color/background_light"
+                    app:srcCompat="@android:drawable/ic_menu_info_details">
+
+                </android.support.design.widget.FloatingActionButton>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btn_markFull"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:tint="@android:color/background_light"
+            app:backgroundTint="@android:color/holo_green_dark"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_input_add">
+
+        </android.support.design.widget.FloatingActionButton>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

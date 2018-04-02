@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#444344">
+
+    <TextView
+        android:id="@+id/tv_feed_tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:text="Feed Timetable"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="casual"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/btn_monday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="Monday"
+        android:textAllCaps="true"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:alpha="0.4"
+        android:background="#fff"
+        android:textSize="50sp"
+        android:focusable="true"/>
+
+    <Button
+        android:id="@+id/btn_tuesday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Tuesday"
+        android:textAllCaps="true"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:alpha="0.4"
+        android:background="#fff"
+        android:textSize="50sp"
+        android:focusable="true"/>
+
+    <Button
+        android:id="@+id/btn_wednesday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:text="Wednesday"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:alpha="0.4"
+        android:background="#fff"
+        android:textSize="50sp"
+        android:focusable="true"/>
+
+    <Button
+        android:id="@+id/btn_thursday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Thursday"
+        android:textAllCaps="true"
+        android:layout_weight="1"
+        android:alpha="0.4"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:focusable="true"
+        android:background="#fff"
+        android:textSize="50sp"/>
+
+    <Button
+        android:id="@+id/btn_friday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:text="Friday"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:alpha="0.4"
+        android:background="#fff"
+        android:textSize="50sp"
+        android:focusable="true"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btn_saturday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:text="Saturday"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:alpha="0.4"
+        android:background="#fff"
+        android:textSize="50sp"
+        android:focusable="true"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btn_sunday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:text="Sunday"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:alpha="0.4"
+        android:background="#fff"
+        android:textSize="50sp"
+        android:focusable="true"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="done"
+        android:textAllCaps="true"
+        android:layout_gravity="end"
+        android:textStyle="bold"
+        android:alpha="0.4"
+        android:background="#fff"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

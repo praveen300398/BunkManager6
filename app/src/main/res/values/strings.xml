@@ -1,0 +1,13 @@
+<resources>
+    <string name="dateSliderTitle">Selected Title</string>
+    <string name="app_name">Attendance Assist</string>
+    <string name="bunk">Help me Bunk</string>
+    <string name="classes_conducted">Classes conducted</string>
+    <string name="fill_detail">fill detail</string>
+    <string name="classes_present">Classes present</string>
+    <string name="fill_detail1">fill detail</string>
+    <string name="fill_in_the_field">Fill in the Field</string>
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+    <string name="bunk1">Bunk</string>
+</resources>
